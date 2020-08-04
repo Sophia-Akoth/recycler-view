@@ -1,4 +1,4 @@
-package ke.co.recyclerviews
+package com.example.recyclerview
 
 import android.view.LayoutInflater
 import android.view.View
@@ -20,6 +20,9 @@ class NamesRecyclerViewAdapter(val namesList: List<String>) :
 
     override fun onBindViewHolder(holder: NamesViewHolder, position: Int) {
         holder.rowView.tvName.text = namesList[position]
+        holder.rowView.tvAge.text=namesList[position]
+        holder.rowView.tvYear.text=namesList[position]
+        holder.rowView.tvHobby.text=namesList[position]
     }
 
     class NamesViewHolder(val rowView: View) : RecyclerView.ViewHolder(rowView)
